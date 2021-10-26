@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Boon</title>
+</head>
+<body>
+
+    <div class="wrapper">
+        <header>
+            <p>Welcome to the Boon Market Preview.</p>
+        </header>
+
+
+        <section class="intro">
+            <div class="intro-top">
+                <div class="menu">
+                    <a href="#">Shop</a>
+                    <a href="#">The Boon Life</a>
+                </div>
+
+                <h1 class="logo">B o o n <br> Market</h1>
+                <div class="divForFill"></div>
+            </div>
+
+            <ul class="branches">
+                <li><a href="#">Conscious Kitchen</a></li>
+                <li><a href="#">Conscious Pantry</a></li>
+                <li><a href="#">Eco Cleaning</a></li>
+                <li><a href="#">Personal Care</a></li>
+                <li><a href="#">Bags & Totes</a></li>
+                <li><a href="#">Gifts</a></li>
+            </ul>
+
+            <h2 class="mainTagline">Shop Goods <span class="forAlign"> a</span> <br> That Do Good <span class="star">*</span></h2>
+            <a href="#" class="shopNow">Shop Now</a>
+
+            <div class="card">
+                <div class="card-item">
+                    <h2>The Boon Impact</h2>
+                    <div>Every purchase gives money directly <br> to a cause of your choice.</div>
+                </div>
+
+                <div class="card-item">
+                    <div>$100,664,335</div>
+                    <div>donated to date</div>
+                </div>
+
+                <div class="card-item">
+                    <div>Want to make a difference?</div>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="about">
+            <a id="aboutLink"></a>
+            <p class="subtext">About Boon</p>
+            <h2 class="tagline">How We Work</h2>
+
+            <div class="items-container">
+                <div class="item">
+                    <img src="assets/img/about/1.jpg" class="item-img" alt="">
+                    <img src="assets/img/about/tagline1.jpg" class="item-tagline" alt="">
+                    <p class="item-subtext">We feature clever, beautiful products that are zero-waste, non-GMO, and toxin-free.</p>
+                </div>
+
+                <div class="item">
+                    <img src="assets/img/about/2.jpg" class="item-img" alt="">
+                    <img src="assets/img/about/tagline2.jpg" class="item-tagline" alt="">
+                    <p class="item-subtext">Our zero-waste products and featured articles make it easy for anyone to make easy swaps with big environmental benefit.</p>
+                </div>
+
+                <div class="item">
+                    <img src="assets/img/about/3.jpg" class="item-img" alt="">
+                    <img src="assets/img/about/tagline3.jpg" class="item-tagline" alt="">
+                    <p class="item-subtext">Each purchase made on Boon Market sends money to the cause of your choice.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="shop">
+            <a id="shopLink"></a>
+            <h2 class="tagline">Shop Your Values</h2>
+
+            <div class="categories">
+                <button class="item active" onclick="makeActive(this)">
+                    <img src="assets/img/shop/toxin.jpg" alt="" class="item-icon">
+                    <p class="item-tagline">Toxin Free</p>
+                </button>
+
+                <button class="item" onclick="makeActive(this)">
+                    <img src="assets/img/shop/smile.svg" alt="" class="item-icon">
+                    <p class="item-tagline">Social Good</p>
+                </button>
+
+                <button class="item" onclick="makeActive(this)">
+                    <img src="assets/img/shop/cycle.svg" alt="" class="item-icon">
+                    <p class="item-tagline">Reusable</p>
+                </button>
+
+                <button class="item" onclick="makeActive(this)">
+                    <img src="assets/img/shop/usa.svg" alt="" class="item-icon">
+                    <p class="item-tagline">Made in the USA</p>
+                </button>
+
+                <button class="item" onclick="makeActive(this)">
+                    <img src="assets/img/shop/plant.svg" alt="" class="item-icon">
+                    <p class="item-tagline">Certified Organic</p>
+                </button>
+
+                <button class="item" onclick="makeActive(this)">
+                    <img src="assets/img/shop/b.svg" alt="" class="item-icon">
+                    <p class="item-tagline">Certified B Corporation</p>
+                </button>
+
+                <!--for mobile devices-->
+
+                <div class="leftSide">
+                    <button class="item active" onclick="makeActive(this)">
+                        <p class="item-tagline">Toxin Free</p>
+                        <img src="assets/img/shop/toxin.jpg" alt="" class="item-icon">
+                    </button>
+
+                    <button class="item" onclick="makeActive(this)">
+                        <p class="item-tagline">Reusable</p>
+                        <img src="assets/img/shop/cycle.svg" alt="" class="item-icon">
+                    </button>
+
+                    <button class="item" onclick="makeActive(this)">
+                        <p class="item-tagline">Certified Organic</p>
+                        <img src="assets/img/shop/plant.svg" alt="" class="item-icon">
+                    </button>
+                </div>
+
+                <div class="rightSide">
+                    <button class="item" onclick="makeActive(this)">
+                        <img src="assets/img/shop/smile.svg" alt="" class="item-icon">
+                        <p class="item-tagline">Social Good</p>
+                    </button>
+
+                    <button class="item" onclick="makeActive(this)">
+                        <img src="assets/img/shop/usa.svg" alt="" class="item-icon">
+                        <p class="item-tagline">Made in the USA</p>
+                    </button>
+
+                    <button class="item" onclick="makeActive(this)">
+                        <img src="assets/img/shop/b.svg" alt="" class="item-icon">
+                        <p class="item-tagline">Certified B Corporation</p>
+                    </button>
+                </div>
+            </div>
+
+            <div class="shopSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="assets/img/shop/1.jpg" alt="" class="slide-img">
+                        <p class="slide-subtext">Candies</p>
+                        <h3 class="slide-tagline">Pack of Chocolate</h3>
+                        <hr>
+                        <div class="buying">
+                            <button class="add">add to bag</button>
+                            <hr>
+                            <p class="cost">$10</p>
+                            <p class="discount">10% Giveback</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="assets/img/shop/2.jpg" alt="" class="slide-img">
+                        <p class="slide-subtext">Boon Supply</p>
+                        <h3 class="slide-tagline">Reusable Towels, Set of 4, Fruit</h3>
+                        <hr>
+                        <div class="buying">
+                            <button class="add">add to bag</button>
+                            <hr>
+                            <p class="cost">$22</p>
+                            <p class="discount">40% Giveback</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="assets/img/shop/3.jpg" alt="" class="slide-img">
+                        <p class="slide-subtext">Zip Top</p>
+                        <h3 class="slide-tagline">Reusable Storage Set</h3>
+                        <hr>
+                        <div class="buying">
+                            <button class="add">add to bag</button>
+                            <hr>
+                            <p class="cost">$90</p>
+                            <p class="discount">20% Giveback</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="assets/img/shop/4.jpg" alt="" class="slide-img">
+                        <p class="slide-subtext">HiBAR</p>
+                        <h3 class="slide-tagline">Zero Waste Moisturize Shampoo and Conditioner</h3>
+                        <hr>
+                        <div class="buying">
+                            <button class="add">add to bag</button>
+                            <hr>
+                            <p class="cost">$27</p>
+                            <p class="discount">10% Giveback</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="assets/img/shop/5.jpg" alt="" class="slide-img">
+                        <p class="slide-subtext">Clean Age</p>
+                        <h3 class="slide-tagline">Unscented Deodorant Bundle</h3>
+                        <hr>
+                        <div class="buying">
+                            <button class="add">add to bag</button>
+                            <hr>
+                            <p class="cost">$32</p>
+                            <p class="discount">15% Giveback</p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+        </section>
+
+
+        <section class="fresh">
+            <h2 class="tagline">What's Fresh</h2>
+
+            <div class="item-container">
+                <div class="fresh-item">
+                    <img src="assets/img/fresh/1.jpg" alt="" class="item-img">
+                    <div class="forAlign"></div>
+                    <div class="item-info">
+                        <p class="type">Collection</p>
+                        <h3 class="item-tagline">Waste-Free Kitchen & Lunch</h3>
+                        <p class="item-subtext">Simple swaps with big environmental impact.</p>
+                        <a href="#" class="shopNow">shop now</a>
+                    </div>
+                 </div>
+            </div>
+            
+            <div class="item-container">
+                <div class="fresh-item">
+                    <div class="item-info">
+                        <p class="type">Collection</p>
+                        <h3 class="item-tagline">Toxin-Free Personal Care</h3>
+                        <p class="item-subtext">All-natural toxin-free care for every body.</p>
+                        <a href="#" class="shopNow">shop now</a>
+                    </div>
+                    <div class="forAlign"></div>
+                    <img src="assets/img/fresh/2.jpg" alt="" class="item-img">
+                 </div>
+            </div>
+            
+            <div class="item-container">
+                <div class="fresh-item">
+                    <img src="assets/img/fresh/3.jpg" alt="" class="item-img">
+                    <div class="forAlign"></div>
+                    <div class="item-info">
+                        <p class="type">Collection</p>
+                        <h3 class="item-tagline">Coffee & Tea</h3>
+                        <p class="item-subtext">Give back every morning with your first sip.</p>
+                        <a href="#" class="shopNow">shop now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="freshSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <img src="assets/img/fresh/slide1.jpg" alt="" class="slide-img">
+                        
+                            <div class="slide-info">
+                                <h3 class="slide-tagline">Celebrating Every Age</h3>
+                                <p class="slide-subtext">Rachel Peters marketed big brands before the need for deodorant and personal care products for her preteens inspired her to start Clean Age alongside h...</p>
+                                <a href="#" class="readMore">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <img src="assets/img/fresh/slide2.jpg" alt="" class="slide-img">
+                        
+                            <div class="slide-info">
+                                <h3 class="slide-tagline">Enjoing Together</h3>
+                                <p class="slide-subtext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur illo veniam distinctio, debitis nihil quae explicabo quidem dolorem provident praesenti...</p>
+                                <a href="#" class="readMore">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <img src="assets/img/fresh/slide3.jpg" alt="" class="slide-img">
+
+                            <div class="slide-info">
+                                <h3 class="slide-tagline">Only Best For You</h3>
+                                <p class="slide-subtext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque repellat perspiciatis cum reiciendis minus quasi quibusdam vero commodi quis dignissimos...</p>
+                                <a href="#" class="readMore">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="freshSwiper-pagination"></div>
+            </div>
+        </section>
+
+
+        <section class="gallery">
+            <h2 class="tagline">#ShopForGood</h2>
+
+            <div class="items-container">
+                <img src="assets/img/gallery/1.jpg" class="item" alt="">
+                <img src="assets/img/gallery/2.jpg" class="item" alt="">
+                <img src="assets/img/gallery/3.jpg" class="item" alt="">
+                <img src="assets/img/gallery/4.jpg" class="item" alt="">
+                <img src="assets/img/gallery/5.jpg" class="item" alt="">
+                <img src="assets/img/gallery/6.jpg" class="item" alt="">
+                <img src="assets/img/gallery/7.jpg" class="item" alt="">
+                <img src="assets/img/gallery/8.jpg" class="item" alt="">
+                <img src="assets/img/gallery/9.jpg" class="item" alt="">
+                <img src="assets/img/gallery/10.jpg" class="item" alt="">
+            </div>
+        </section>
+
+
+        <section class="letter">
+            <h2 class="tagline">Boonletter</h2>
+            <p class="subtext">Treat yourself with weekly product releases, digital love, and exclusive deals.</p>
+
+            <form action="">
+                <input type="text" id="inputName" placeholder="First name">
+                <input type="email" id="inputEmail" placeholder="Email address">
+                <input type="submit" id="inputGo" value="go">
+            </form>
+        </section>
+
+        <footer>
+            <section class="first">
+                <table class="footerCard" cellspacing=0>
+                    <tr>
+                        <td class="image"><img src="assets/img/bigB.jpg" alt=""></td>
+                        <td class="def">
+                            <p>boon (def.)</p>
+                            <p class="descr_mobile">Something very beneficial or helpful</p>
+                        </td> 
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" class="descr"><p>Something very beneficial or helpful</p></td>
+                    </tr>
+                    
+                    <tr><td colspan="2" class="copyright">Copyright Boon Supply 2021. All Rights Reserved</td></tr>
+                </table>
+            </section>
+
+            <section class="second">
+                <div class="items-container">
+                    <div class="item">
+                        <p class="item-tagline">Shop</p>
+                        <a href="#shopLink" class="item-link">Shop All Items</a>
+                        <a href="#shopLink" class="item-link">Shop Reusable</a>
+                        <a href="#shopLink" class="item-link">Shop Toxin Free</a>
+                    </div>
+
+                    <div class="item">
+                        <p class="item-tagline">About</p>
+                        <a href="#aboutLink" class="item-link">About Boon Market</a>
+                        <a href="#" class="item-link">The Boon Life</a>
+                    </div>
+
+                    <div class="item">
+                        <p class="item-tagline">Support</p>
+                        <a href="#" class="item-link">Contact Us</a>
+                        <a href="#" class="item-link">Terms of Service</a>
+                        <a href="#" class="item-link">Privacy Policy</a>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </div>
+
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
