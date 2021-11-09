@@ -1125,7 +1125,7 @@ h2.tagline {
 }
 
 .shop .swiper-slide .discount {
-    display: inline-block;
+    display: block;
     padding: 1.3% 3% 1.7% 2%;
     margin: 0 0 0 auto;
     background-color: #FBDCC5;
