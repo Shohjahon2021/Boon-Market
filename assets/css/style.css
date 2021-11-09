@@ -1816,6 +1816,7 @@ input::placeholder {
     text-align: left;
     padding-left: 20px;    
     margin-right: auto;
+    -webkit-appearance: none;
 }
 
 #inputGo:hover {
