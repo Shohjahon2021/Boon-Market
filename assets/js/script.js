@@ -10,12 +10,14 @@ menuBtn.addEventListener('click', function() {
   if (btnClass === 'menu-btn') {
     menuBtn.className = 'menu-btn active';
     menu.className = 'menu active'
-    body.style.overflowY = "hidden";
+    //body.style.overflowY = "hidden";
+    body.style.cssText = "touch-action: none; -ms-touch-action: none;"
     menu.style.boxShadow = '0px 100vmax 1px 100vmax rgb(0 0 0 / 45%)';
   } else {
       menuBtn.className = 'menu-btn';
       menu.className = 'menu'
-      body.style.overflowY = "auto";
+      //body.style.overflowY = "auto";
+      body.style.cssText = "touch-action: auto; -ms-touch-action: auto;"
       menu.style.boxShadow = 'none';
   }
 });
