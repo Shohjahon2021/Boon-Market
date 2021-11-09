@@ -15,6 +15,38 @@
             <p>Welcome to the Boon Market Preview.</p>
         </header>
 
+        <header class="mobile">
+            <h1 class="logo">B o o n <br> Market</h1>
+
+            <a href="#" class="bigLink">Shop</a>
+            <a href="#" class="bigLink">The Boon Life</a>
+        
+            <button class="menu-btn">
+                <div class="line-container top">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+
+                <div class="line middle"></div>
+
+                <div class="line-container bottom">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </button>
+
+            <ul class="menu">
+                <li><a href="#" class="bigLink">Shop</a></li>
+                <li><a href="#" class="bigLink">The Boon Life</a></li>
+                <li><a href="#">Conscious Kitchen</a></li>
+                <li><a href="#">Conscious Pantry</a></li>
+                <li><a href="#">Eco Cleaning</a></li>
+                <li><a href="#">Personal Care</a></li>
+                <li><a href="#">Bags & Totes</a></li>
+                <li><a href="#">Gifts</a></li>
+            </ul>
+        </header>
+
 
         <section class="intro">
             <div class="intro-top">
@@ -65,20 +97,38 @@
 
             <div class="items-container">
                 <div class="item">
-                    <img src="assets/img/about/1.jpg" class="item-img" alt="">
-                    <img src="assets/img/about/tagline1.jpg" class="item-tagline" alt="">
+                    <picture>
+                       <source data-srcset="assets/img/about/1.webp" type="image/webp">
+                       <img data-src="assets/img/about/1.jpg" class="item-img lazyload" alt=""> 
+                    </picture>
+                    <picture>
+                        <source data-srcset="assets/img/about/tagline1.webp" type="image/webp">
+                        <img data-src="assets/img/about/tagline1.jpg" class="item-tagline lazyload" alt=""> 
+                    </picture>
                     <p class="item-subtext">We feature clever, beautiful products that are zero-waste, non-GMO, and toxin-free.</p>
                 </div>
 
                 <div class="item">
-                    <img src="assets/img/about/2.jpg" class="item-img" alt="">
-                    <img src="assets/img/about/tagline2.jpg" class="item-tagline" alt="">
+                    <picture>
+                        <source data-srcset="assets/img/about/2.webp" type="image/webp">
+                        <img data-src="assets/img/about/2.jpg" class="item-img lazyload" alt=""> 
+                     </picture>
+                     <picture>
+                         <source data-srcset="assets/img/about/tagline2.webp" type="image/webp">
+                         <img data-src="assets/img/about/tagline2.jpg" class="item-tagline lazyload" alt=""> 
+                     </picture>
                     <p class="item-subtext">Our zero-waste products and featured articles make it easy for anyone to make easy swaps with big environmental benefit.</p>
                 </div>
 
                 <div class="item">
-                    <img src="assets/img/about/3.jpg" class="item-img" alt="">
-                    <img src="assets/img/about/tagline3.jpg" class="item-tagline" alt="">
+                    <picture>
+                        <source data-srcset="assets/img/about/3.webp" type="image/webp">
+                        <img data-src="assets/img/about/3.jpg" class="item-img lazyload" alt=""> 
+                     </picture>
+                     <picture>
+                         <source data-srcset="assets/img/about/tagline3.webp" type="image/webp">
+                         <img data-src="assets/img/about/tagline3.jpg" class="item-tagline lazyload" alt=""> 
+                     </picture>
                     <p class="item-subtext">Each purchase made on Boon Market sends money to the cause of your choice.</p>
                 </div>
             </div>
@@ -91,32 +141,45 @@
 
             <div class="categories">
                 <button class="item active" onclick="makeActive(this)">
-                    <img src="assets/img/shop/toxin.jpg" alt="" class="item-icon">
+                    <picture>
+                        <source data-srcset="assets/img/shop/toxin.webp" type="image/webp">
+                        <img data-src="assets/img/shop/toxin.jpg" class="item-icon lazyload" alt="">
+                    </picture>
                     <p class="item-tagline">Toxin Free</p>
                 </button>
 
                 <button class="item" onclick="makeActive(this)">
-                    <img src="assets/img/shop/smile.svg" alt="" class="item-icon">
+                    <picture>
+                        <img data-src="assets/img/shop/smile.svg" alt="" class="item-icon lazyload">
+                    </picture>
                     <p class="item-tagline">Social Good</p>
                 </button>
 
                 <button class="item" onclick="makeActive(this)">
-                    <img src="assets/img/shop/cycle.svg" alt="" class="item-icon">
+                    <picture>
+                        <img data-src="assets/img/shop/cycle.svg" alt="" class="item-icon lazyload">
+                    </picture>
                     <p class="item-tagline">Reusable</p>
                 </button>
 
                 <button class="item" onclick="makeActive(this)">
-                    <img src="assets/img/shop/usa.svg" alt="" class="item-icon">
+                    <picture>
+                        <img data-src="assets/img/shop/usa.svg" alt="" class="item-icon lazyload">
+                    </picture>
                     <p class="item-tagline">Made in the USA</p>
                 </button>
 
                 <button class="item" onclick="makeActive(this)">
-                    <img src="assets/img/shop/plant.svg" alt="" class="item-icon">
+                    <picture>
+                        <img data-src="assets/img/shop/plant.svg" alt="" class="item-icon lazyload">
+                    </picture>
                     <p class="item-tagline">Certified Organic</p>
                 </button>
 
                 <button class="item" onclick="makeActive(this)">
-                    <img src="assets/img/shop/b.svg" alt="" class="item-icon">
+                    <picture>
+                        <img data-src="assets/img/shop/b.svg" alt="" class="item-icon lazyload">
+                    </picture>
                     <p class="item-tagline">Certified B Corporation</p>
                 </button>
 
@@ -125,33 +188,36 @@
                 <div class="leftSide">
                     <button class="item active" onclick="makeActive(this)">
                         <p class="item-tagline">Toxin Free</p>
-                        <img src="assets/img/shop/toxin.jpg" alt="" class="item-icon">
+                        <picture>
+                            <source data-srcset="assets/img/shop/toxin.webp" type="image/webp">
+                            <img data-src="assets/img/shop/toxin.jpg" class="item-icon lazyload" alt=""> 
+                        </picture>
                     </button>
 
                     <button class="item" onclick="makeActive(this)">
                         <p class="item-tagline">Reusable</p>
-                        <img src="assets/img/shop/cycle.svg" alt="" class="item-icon">
+                        <img src="assets/img/shop/cycle.svg" alt="" class="item-icon lazyload"> 
                     </button>
 
                     <button class="item" onclick="makeActive(this)">
                         <p class="item-tagline">Certified Organic</p>
-                        <img src="assets/img/shop/plant.svg" alt="" class="item-icon">
+                        <img data-src="assets/img/shop/plant.svg" alt="" class="item-icon lazyload">
                     </button>
                 </div>
 
                 <div class="rightSide">
                     <button class="item" onclick="makeActive(this)">
-                        <img src="assets/img/shop/smile.svg" alt="" class="item-icon">
+                        <img data-src="assets/img/shop/smile.svg" alt="" class="item-icon lazyload">
                         <p class="item-tagline">Social Good</p>
                     </button>
 
                     <button class="item" onclick="makeActive(this)">
-                        <img src="assets/img/shop/usa.svg" alt="" class="item-icon">
+                        <img data-src="assets/img/shop/usa.svg" alt="" class="item-icon lazyload">
                         <p class="item-tagline">Made in the USA</p>
                     </button>
 
                     <button class="item" onclick="makeActive(this)">
-                        <img src="assets/img/shop/b.svg" alt="" class="item-icon">
+                        <img src="assets/img/shop/b.svg" alt="" class="item-icon lazyload">
                         <p class="item-tagline">Certified B Corporation</p>
                     </button>
                 </div>
@@ -160,7 +226,10 @@
             <div class="shopSwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="assets/img/shop/1.jpg" alt="" class="slide-img">
+                        <picture>
+                            <source data-srcset="assets/img/shop/1.webp" type="image/webp">
+                            <img data-src="assets/img/shop/1.jpg" class="slide-img lazyload" alt=""> 
+                        </picture>
                         <p class="slide-subtext">Candies</p>
                         <h3 class="slide-tagline">Pack of Chocolate</h3>
                         <hr>
@@ -173,7 +242,10 @@
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="assets/img/shop/2.jpg" alt="" class="slide-img">
+                        <picture>
+                            <source data-srcset="assets/img/shop/2.webp" type="image/webp">
+                            <img data-src="assets/img/shop/2.jpg" class="slide-img lazyload" alt=""> 
+                        </picture>
                         <p class="slide-subtext">Boon Supply</p>
                         <h3 class="slide-tagline">Reusable Towels, Set of 4, Fruit</h3>
                         <hr>
@@ -186,7 +258,10 @@
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="assets/img/shop/3.jpg" alt="" class="slide-img">
+                        <picture>
+                            <source data-srcset="assets/img/shop/3.webp" type="image/webp">
+                            <img data-src="assets/img/shop/3.jpg" class="slide-img lazyload" alt=""> 
+                        </picture>
                         <p class="slide-subtext">Zip Top</p>
                         <h3 class="slide-tagline">Reusable Storage Set</h3>
                         <hr>
@@ -199,7 +274,10 @@
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="assets/img/shop/4.jpg" alt="" class="slide-img">
+                        <picture>
+                            <source data-srcset="assets/img/shop/4.webp" type="image/webp">
+                            <img data-src="assets/img/shop/4.jpg" class="slide-img lazyload" alt=""> 
+                        </picture>
                         <p class="slide-subtext">HiBAR</p>
                         <h3 class="slide-tagline">Zero Waste Moisturize Shampoo and Conditioner</h3>
                         <hr>
@@ -212,7 +290,10 @@
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="assets/img/shop/5.jpg" alt="" class="slide-img">
+                        <picture>
+                            <source data-srcset="assets/img/shop/5.webp" type="image/webp">
+                            <img data-src="assets/img/shop/5.jpg" class="slide-img lazyload" alt=""> 
+                        </picture>
                         <p class="slide-subtext">Clean Age</p>
                         <h3 class="slide-tagline">Unscented Deodorant Bundle</h3>
                         <hr>
@@ -233,8 +314,10 @@
 
             <div class="item-container">
                 <div class="fresh-item">
-                    <img src="assets/img/fresh/1.jpg" alt="" class="item-img">
-                    <div class="forAlign"></div>
+                    <picture>
+                        <source data-srcset="assets/img/fresh/1.webp" type="image/webp">
+                        <img data-src="assets/img/fresh/1.jpg" class="item-img lazyload" alt=""> 
+                    </picture>
                     <div class="item-info">
                         <p class="type">Collection</p>
                         <h3 class="item-tagline">Waste-Free Kitchen & Lunch</h3>
@@ -252,15 +335,19 @@
                         <p class="item-subtext">All-natural toxin-free care for every body.</p>
                         <a href="#" class="shopNow">shop now</a>
                     </div>
-                    <div class="forAlign"></div>
-                    <img src="assets/img/fresh/2.jpg" alt="" class="item-img">
+                    <picture>
+                        <source data-srcset="assets/img/fresh/2.webp" type="image/webp">
+                        <img data-src="assets/img/fresh/2.jpg" class="item-img lazyload" alt=""> 
+                    </picture>
                  </div>
             </div>
             
             <div class="item-container">
                 <div class="fresh-item">
-                    <img src="assets/img/fresh/3.jpg" alt="" class="item-img">
-                    <div class="forAlign"></div>
+                    <picture>
+                        <source data-srcset="assets/img/fresh/3.webp" type="image/webp">
+                        <img data-src="assets/img/fresh/3.jpg" class="item-img lazyload" alt=""> 
+                    </picture>
                     <div class="item-info">
                         <p class="type">Collection</p>
                         <h3 class="item-tagline">Coffee & Tea</h3>
@@ -274,8 +361,11 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="slide-content">
-                            <img src="assets/img/fresh/slide1.jpg" alt="" class="slide-img">
-                        
+                            <picture>
+                                <source data-srcset="assets/img/fresh/slide1.webp" type="image/webp">
+                                <img data-src="assets/img/fresh/slide1.jpg" class="slide-img lazyload" alt=""> 
+                            </picture>                        
+
                             <div class="slide-info">
                                 <h3 class="slide-tagline">Celebrating Every Age</h3>
                                 <p class="slide-subtext">Rachel Peters marketed big brands before the need for deodorant and personal care products for her preteens inspired her to start Clean Age alongside h...</p>
@@ -286,7 +376,10 @@
 
                     <div class="swiper-slide">
                         <div class="slide-content">
-                            <img src="assets/img/fresh/slide2.jpg" alt="" class="slide-img">
+                            <picture>
+                                <source data-srcset="assets/img/fresh/slide2.webp" type="image/webp">
+                                <img data-src="assets/img/fresh/slide2.jpg" class="slide-img lazyload" alt=""> 
+                            </picture>
                         
                             <div class="slide-info">
                                 <h3 class="slide-tagline">Enjoing Together</h3>
@@ -298,7 +391,10 @@
 
                     <div class="swiper-slide">
                         <div class="slide-content">
-                            <img src="assets/img/fresh/slide3.jpg" alt="" class="slide-img">
+                            <picture>
+                                <source data-srcset="assets/img/fresh/slide3.webp" type="image/webp">
+                                <img data-src="assets/img/fresh/slide3.jpg" class="slide-img lazyload" alt=""> 
+                            </picture>
 
                             <div class="slide-info">
                                 <h3 class="slide-tagline">Only Best For You</h3>
@@ -318,16 +414,46 @@
             <h2 class="tagline">#ShopForGood</h2>
 
             <div class="items-container">
-                <img src="assets/img/gallery/1.jpg" class="item" alt="">
-                <img src="assets/img/gallery/2.jpg" class="item" alt="">
-                <img src="assets/img/gallery/3.jpg" class="item" alt="">
-                <img src="assets/img/gallery/4.jpg" class="item" alt="">
-                <img src="assets/img/gallery/5.jpg" class="item" alt="">
-                <img src="assets/img/gallery/6.jpg" class="item" alt="">
-                <img src="assets/img/gallery/7.jpg" class="item" alt="">
-                <img src="assets/img/gallery/8.jpg" class="item" alt="">
-                <img src="assets/img/gallery/9.jpg" class="item" alt="">
-                <img src="assets/img/gallery/10.jpg" class="item" alt="">
+                <picture class="item">
+                    <source data-srcset="assets/img/gallery/1.webp" type="image/webp">
+                    <img data-src="assets/img/gallery/1.jpg" class="lazyload" alt=""> 
+                </picture>
+                <picture class="item">
+                    <source data-srcset="assets/img/gallery/2.webp" type="image/webp">
+                    <img data-src="assets/img/gallery/2.jpg" class="lazyload" alt=""> 
+                </picture>
+                <picture class="item">
+                    <source data-srcset="assets/img/gallery/3.webp" type="image/webp">
+                    <img data-src="assets/img/gallery/3.jpg" class="lazyload" alt=""> 
+                </picture>
+                <picture class="item">
+                    <source data-srcset="assets/img/gallery/4.webp" type="image/webp">
+                    <img data-src="assets/img/gallery/4.jpg" class="lazyload" alt=""> 
+                </picture>
+                <picture class="item">
+                    <source data-srcset="assets/img/gallery/5.webp" type="image/webp">
+                    <img data-src="assets/img/gallery/5.jpg" class="lazyload" alt=""> 
+                </picture>
+                <picture class="item">
+                    <source data-srcset="assets/img/gallery/6.webp" type="image/webp">
+                    <img data-src="assets/img/gallery/6.jpg" class="lazyload" alt=""> 
+                </picture>
+                <picture class="item">
+                    <source data-srcset="assets/img/gallery/7.webp" type="image/webp">
+                    <img data-src="assets/img/gallery/7.jpg" class="lazyload" alt=""> 
+                </picture>
+                <picture class="item">
+                    <source data-srcset="assets/img/gallery/8.webp" type="image/webp">
+                    <img data-src="assets/img/gallery/8.jpg" class="lazyload" alt=""> 
+                </picture>
+                <picture class="item">
+                    <source data-srcset="assets/img/gallery/9.webp" type="image/webp">
+                    <img data-src="assets/img/gallery/9.jpg" class="lazyload" alt=""> 
+                </picture>
+                <picture class="item">
+                    <source data-srcset="assets/img/gallery/10.webp" type="image/webp">
+                    <img data-src="assets/img/gallery/10.jpg" class="lazyload" alt=""> 
+                </picture>
             </div>
         </section>
 
@@ -344,10 +470,15 @@
         </section>
 
         <footer>
-            <section class="first">
+            <div class="first">
                 <table class="footerCard" cellspacing=0>
                     <tr>
-                        <td class="image"><img src="assets/img/bigB.jpg" alt=""></td>
+                        <td class="image">
+                            <picture>
+                                <source data-srcset="assets/img/bigB.webp" type="image/webp">
+                                <img data-src="assets/img/bigB.jpg" class="lazyload" alt=""> 
+                            </picture>
+                        </td>
                         <td class="def">
                             <p>boon (def.)</p>
                             <p class="descr_mobile">Something very beneficial or helpful</p>
@@ -360,9 +491,9 @@
                     
                     <tr><td colspan="2" class="copyright">Copyright Boon Supply 2021. All Rights Reserved</td></tr>
                 </table>
-            </section>
+            </div>
 
-            <section class="second">
+            <div class="second">
                 <div class="items-container">
                     <div class="item">
                         <p class="item-tagline">Shop</p>
@@ -384,10 +515,11 @@
                         <a href="#" class="item-link">Privacy Policy</a>
                     </div>
                 </div>
-            </section>
+            </div>
         </footer>
     </div>
 
+    <script src="assets/js/lazySizes.min.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
