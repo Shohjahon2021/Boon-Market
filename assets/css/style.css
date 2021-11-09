@@ -213,6 +213,7 @@ header.mobile .logo {
     line-height: 1.15;
     -moz-text-align-last: left;
          text-align-last: left;
+    white-space: nowrap;
 }
 
 header.mobile .logo::first-line {
@@ -255,6 +256,7 @@ header.mobile .menu-btn {
     height: 50px;
     margin-left: 6.5%;
     background-color: #ffd485;
+    border-radius: 3px;    
     -webkit-transition: .3s;
     -o-transition: .3s;
     transition: .3s;
@@ -1132,6 +1134,7 @@ h2.tagline {
     color: #343434;
     letter-spacing: 1px;
     text-transform: uppercase;
+    white-space: nowrap;
 }
 
 
