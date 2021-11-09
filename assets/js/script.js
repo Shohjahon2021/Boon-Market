@@ -1,4 +1,5 @@
 let body = document.getElementsByTagName('body')[0];
+let bodyWrapper = body.querySelector('.wrapper');
 let headerMobile = body.querySelector('header.mobile');
 let menu = body.querySelector('header.mobile').querySelector('.menu');
 let menuBtn = body.querySelector('.menu-btn');
@@ -9,12 +10,12 @@ menuBtn.addEventListener('click', function() {
   if (btnClass === 'menu-btn') {
     menuBtn.className = 'menu-btn active';
     menu.className = 'menu active'
-    body.style.overflowY = "hidden";
+    bodyWrapper.style.overflowY = "hidden";
     menu.style.boxShadow = '0px 100vmax 1px 100vmax rgb(0 0 0 / 45%)';
   } else {
       menuBtn.className = 'menu-btn';
       menu.className = 'menu'
-      body.style.overflowY = "auto";
+      bodyWrapper.style.overflowY = "auto";
       menu.style.boxShadow = 'none';
   }
 });
