@@ -152,6 +152,7 @@ font-weight: 400;
 /* ----------------------------------------- */
 
 body {
+    position: relative;
     font-family: 'Roboto';
     overflow-x: hidden;
 }
@@ -1135,6 +1136,7 @@ h2.tagline {
     letter-spacing: 1px;
     text-transform: uppercase;
     white-space: nowrap;
+    background-size: cover;
 }
 
 

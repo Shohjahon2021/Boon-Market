@@ -10,12 +10,12 @@ menuBtn.addEventListener('click', function() {
   if (btnClass === 'menu-btn') {
     menuBtn.className = 'menu-btn active';
     menu.className = 'menu active'
-    bodyWrapper.style.overflowY = "hidden";
+    body.style.overflowY = "hidden";
     menu.style.boxShadow = '0px 100vmax 1px 100vmax rgb(0 0 0 / 45%)';
   } else {
       menuBtn.className = 'menu-btn';
       menu.className = 'menu'
-      bodyWrapper.style.overflowY = "auto";
+      body.style.overflowY = "auto";
       menu.style.boxShadow = 'none';
   }
 });
