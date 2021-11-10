@@ -10,40 +10,36 @@ menuBtn.addEventListener('click', function() {
   if (btnClass === 'menu-btn') {
     menuBtn.className = 'menu-btn active';
     menu.className = 'menu active'
-    //body.style.overflowY = "hidden";
-    body.style.cssText = "touch-action: none; -ms-touch-action: none;"
-    menu.style.boxShadow = '0px 100vmax 1px 100vmax rgb(0 0 0 / 45%)';
+    body.style.cssText = "position: fixed; overflow: hidden;"
+    menu.style.boxShadow = '0px 84vmax 1px 84vmax rgb(0 0 0 / 45%)';
   } else {
       menuBtn.className = 'menu-btn';
       menu.className = 'menu'
-      //body.style.overflowY = "auto";
-      body.style.cssText = "touch-action: auto; -ms-touch-action: auto;"
+      body.style.cssText = "position: static; overflow: auto;"
       menu.style.boxShadow = 'none';
   }
 });
 
 // Menu button
 
-
 let categories = body.querySelector('.shop').querySelector('.categories');
-let activeBtn = categories.querySelector('.item.active');
+let activeBtn = categories.querySelector('.item.activated');
 
 if(body.offsetWidth <= 481) {
-  if(categories.querySelector('.leftSide').querySelector('.item.active')) {
-    activeBtn = categories.querySelector('.leftSide').querySelector('.item.active');
+  if(categories.querySelector('.leftSide').querySelector('.item.activated')) {
+    activeBtn = categories.querySelector('.leftSide').querySelector('.item.activated');
   } else {
-    activeBtn = categories.querySelector('.rightSide').querySelector('.item.active');
+    activeBtn = categories.querySelector('.rightSide').querySelector('.item.activated');
   }
 }
 
 function makeActive(elem) {
   activeBtn.className = 'item';
-  elem.className = 'item active';
+  elem.className = 'item activated';
   activeBtn = elem;
 }
 
 // Categories
-
 
 const shopSwiper = new Swiper('.shopSwiper', {
   direction: 'horizontal',
