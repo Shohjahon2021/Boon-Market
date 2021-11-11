@@ -1,23 +1,27 @@
 let body = document.getElementsByTagName('body')[0];
 let bodyWrapper = body.querySelector('.wrapper');
 let headerMobile = body.querySelector('header.mobile');
-let menu = body.querySelector('header.mobile').querySelector('.menu');
+let headerHeight = headerMobile.offsetHeight;
 let menuBtn = body.querySelector('.menu-btn');
+let menu = body.querySelector('header.mobile').querySelector('.menu');
+let pointReturn;
 
 menuBtn.addEventListener('click', function() {
   let btnClass = menuBtn.className;
-
+  
   if (btnClass === 'menu-btn') {
+    pointReturn = window.pageYOffset;
+    body.style.position = 'fixed';
     menuBtn.className = 'menu-btn active';
     menu.className = 'menu active'
-    body.style.cssText = "position: fixed; overflow: hidden;"
     menu.style.boxShadow = '0px 84vmax 1px 84vmax rgb(0 0 0 / 45%)';
   } else {
+      body.style.position = 'static'
+      window.scrollTo(0, pointReturn);
       menuBtn.className = 'menu-btn';
       menu.className = 'menu'
-      body.style.cssText = "position: static; overflow: auto;"
       menu.style.boxShadow = 'none';
-  }
+    }
 });
 
 // Menu button
