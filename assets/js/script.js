@@ -14,13 +14,13 @@ menuBtn.addEventListener('click', function() {
     body.style.position = 'fixed';
     menuBtn.className = 'menu-btn active';
     menu.className = 'menu active'
-    menu.style.boxShadow = '0px 84vmax 1px 84vmax rgb(0 0 0 / 45%)';
+    menu.style.cssText = '-webkit-box-shadow: 0px 84vmax 1px 84vmax rgb(0 0 0 / 45%); box-shadow: 0px 84vmax 1px 84vmax rgb(0 0 0 / 45%);';
   } else {
       body.style.position = 'static'
       window.scrollTo(0, pointReturn);
       menuBtn.className = 'menu-btn';
       menu.className = 'menu'
-      menu.style.boxShadow = 'none';
+      menu.style.cssText = '-webkit-box-shadow: none; box-shadow: none;';
     }
 });
 
